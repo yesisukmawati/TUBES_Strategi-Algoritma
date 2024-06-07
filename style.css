@@ -151,16 +151,9 @@ form{
     margin-bottom: 15px;
 }
 
-.food-list ul {
-    list-style-type: none;
-    padding: 0;
-}
 
-.food-list li {
-    background-color: #ffffff;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    font-family: 'Kaisei Decol', serif;
+.result-section {
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
 }

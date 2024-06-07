@@ -14,6 +14,8 @@ const foods = [
     { name: "Telur", price: 3000, protein: 10.80 },  
     { name: "Soto Daging", price: 25000, protein: 18.25 },
     { name: "Pisang goreng", price: 3000, protein: 0.4 },
+    { name: "ikan lele", price: 12000, protein: 2.6 },
+    
 ];
 
 const maxProtein = 1000;
@@ -89,7 +91,15 @@ function findBestMealBranchAndBound(foods, budget, maxProtein, maxItems) {
     return bestMeal;
 }
 
-const budget = 20000;
+
+function getUserBudget() {
+    let params = new URL(document.location.toString()).searchParams;
+ 
+    let budget = parseInt(params.get("budget"));
+    return budget;
+ }
+
+const budget = getUserBudget();
 const affordableFoods = foods.filter(food => food.price <= budget);
 
 // Testing Backtracking
