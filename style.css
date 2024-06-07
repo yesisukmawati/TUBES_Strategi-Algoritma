@@ -1,0 +1,166 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+body {
+    background-color: #FDF7FA;
+}
+
+.nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid #FDF7FA;
+    box-shadow: 0px 5px 50px lightgrey;
+}
+
+.nav .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav .logo h1 {
+    font-weight: 600;
+    font-family: kaisei decol;
+    color: black;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.nav .logo .fotogizi{
+    margin-left: -6px;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: flex-end;
+    gap: 20px; 
+}
+
+.nav li a {
+    display: flex;
+    color: black;
+    text-align: right;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.content{
+    /* padding: 0px 1150px 0px 0px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+   gap: 500px;
+}
+
+.TextBox{
+    padding-top: 200px;
+    font-size: large;
+    padding-left: 37px;
+    font-family: Jua;
+}
+
+/* .poster{
+    display: flex;
+    align-items:center;
+    padding: 100px 0px 0px 600px;
+} */
+
+
+form{
+    display: flex;
+    /*flex-direction: column;*/ 
+    padding-top: 30px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.input [type=text], select{
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.dropdown select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.input [type=submit]{
+    border-radius: 100px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+.reminder{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 8px;
+   flex-direction: column;
+    /* padding-top: 80px; */
+    font-size: 30px;
+    /* padding-left: 600px; */
+    /* padding-bottom: 100px; */
+    font-family: metal;
+}
+
+.reminder h3 {
+   padding-top: 100px;
+}
+
+.box {
+   display: flex;
+   flex-direction: row;
+   gap: 90px;
+
+}
+
+/* Tambahkan di file style.css */
+.food-list {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.food-list h2 {
+    color: #333;
+    font-family: 'Jua', sans-serif;
+    margin-bottom: 15px;
+}
+
+.food-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.food-list li {
+    background-color: #ffffff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-family: 'Kaisei Decol', serif;
+}
